@@ -1,0 +1,98 @@
+.projects-cards__menu-pagination {
+	display: flex;
+	column-gap: 60.5px;
+	justify-content: flex-end;
+	bottom: 0px !important;
+	z-index: 1 !important;
+}
+
+.projects-cards__menu-pagination .swiper-pagination-bullet {
+	opacity: 1;
+	margin: 0 !important;
+	height: auto !important;
+	border-radius: 0;
+	width: auto !important;
+	background-color: unset;
+	font-size: 14px;
+	line-height: 19px;
+	text-transform: uppercase;
+	font-family: 'Yeseva One', cursive;
+	position: relative;
+	transition: color 0.3s linear;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.projects-cards__menu-pagination .swiper-pagination-bullet:hover {
+	color: rgba(255, 255, 255, 0.8);
+	transition: color 0.3s linear;
+}
+
+.projects-cards__menu-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	color: #E3B873;
+	transition: color 0.3s linear;
+}
+
+.projects-cards__menu-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	color: #d6a75b;
+	transition: color 0.3s linear;
+}
+
+.projects-cards__menu-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+	content: "";
+	width: 0%;
+	height: 1px;
+	background-color: #E3B873;
+	position: absolute;
+	bottom: -8px;
+	left: 0;
+	transition: width 0.5s linear, background-color 0.3s linear;
+}
+
+.projects-cards__menu-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+	width: 100%;
+	background-color: #d6a75b;
+	transition: width 0.5s linear, background-color 0.3s linear;
+}
+
+.projects-card__pagination .swiper-pagination-bullet {
+	background-color: #ffffff !important;
+	opacity: 0.3;
+	width: 9.57px !important;
+	height: 9.57px !important;
+	margin: 0 !important;
+}
+
+.projects-card__pagination .swiper-pagination-bullet-active {
+	opacity: 1;
+}
+
+.progress-slider {
+	display: inline-block;
+	max-width: 10px;
+	position: absolute;
+	top: 245px !important;
+	left: -10px !important;
+}
+
+.progress-slider-pagination {
+	display: flex;
+	flex-direction: column;
+}
+
+.progress-slider-pagination .swiper-pagination-bullet {
+	height: 38px !important;
+	width: 2px !important;
+	background-color: #e3b873;
+	border-radius: 0;
+	margin: 0 0 11px !important;
+	opacity: 0;
+	transition: opacity 0.2s linear, transform 0.2s linear;
+	transform: translate(0, -20px);
+}
+
+.progress-slider-pagination .swiper-pagination-bullet-active {
+	opacity: 1;
+	height: 38px !important;
+	transform: translate(0, 0);
+	transition: opacity 1s linear, transform 0.3s linear;
+}
