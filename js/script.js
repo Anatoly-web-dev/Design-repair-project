@@ -166,3 +166,136 @@ menuSlider.innerHTML = `<li class="services__item active swiper-pagination-bulle
 								<li class="services__item swiper-pagination-bullet" role="button" aria-label="Go to slide 11">
 									<a class="services__link" href="#">Eclecticism</a>
 								</li>`;
+
+/* Плавная прокрутка к разделу страницы */
+const smoothLinks = document.querySelectorAll('.menu__link');
+const headerHeight = document.querySelector('.header').clientHeight;
+if (smoothLinks) {
+	smoothLinks.forEach(smoothLink => smoothLink.addEventListener('click', (event) => {
+		event.preventDefault();
+		if (event.target.closest('.menu__link')) {
+			const currentAddress = document.querySelector(event.target.getAttribute('href'));
+			const scrollValue = currentAddress.getBoundingClientRect().top + scrollY - headerHeight;
+			window.scrollTo({ top: scrollValue, behavior: "smooth" });
+		}
+	}));
+}
+
+/* popup */
+
+const popupBtns = document.querySelectorAll('.pop-up-btn');
+const lockPadding = document.querySelectorAll('.lock-padding');
+let unlock = true;
+
+if (popupBtns.length > 0) {
+	popupBtns.forEach(btn => {
+		btn.addEventListener('click', (event) => {
+			event.preventDefault();
+			const address = btn.getAttribute('href');
+			const currentPopup = document.querySelector(`${address}`);
+			popupOpen(currentPopup);
+		});
+	})
+}
+
+function popupOpen(currentPopup) {
+	if (currentPopup && unlock) {
+		const popupActive = document.querySelector('.popup.open');
+		if (popupActive) {
+			popupClose(popupActive, false);
+		} else {
+			bodyLock();
+		}
+	}
+	currentPopup.classList.add('open');
+	currentPopup.addEventListener('click', (event) => {
+		if (!event.target.closest('.callback__form')) {
+			popupClose(event.target.closest('.popup'));
+		}
+	});
+}
+
+const popupCloseBtns = document.querySelectorAll('.close');
+if (popupCloseBtns.length > 0) {
+	popupCloseBtns.forEach(btnClose => {
+		btnClose.addEventListener('click', (event) => {
+			event.preventDefault();
+			popupClose(btnClose.closest('.popup'));
+		});
+	})
+}
+
+function popupClose(popupActive, doUnlock = true) {
+	if (unlock) {
+		popupActive.classList.remove('open');
+		if (doUnlock) {
+			bodyUnlock();
+		}
+	}
+}
+
+function bodyLock() {
+	const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+	if (lockPadding.length > 0) {
+		lockPadding.forEach(elem => {
+			elem.style.paddingRight = lockPaddingValue;
+		})
+	}
+	document.body.style.paddingRight = lockPaddingValue;
+	document.body.classList.add('lock');
+	unlock = false;
+	setTimeout(() => {
+		unlock = true;
+	}, 600);
+}
+
+function bodyUnlock() {
+	setTimeout(() => {
+		if (lockPadding.length > 0) {
+			lockPadding.forEach(elem => {
+				elem.style.paddingRight = '0px';
+			})
+		}
+		document.body.style.paddingRight = '0px';
+		document.body.classList.remove('lock');
+	}, 600);
+	unlock = false;
+	setTimeout(() => {
+		unlock = true;
+	}, 600);
+}
+
+document.addEventListener('keydown', (event) => {
+	if (event.which === 27) {
+		const popupActive = document.querySelector('.popup.open');
+		popupClose(popupActive);
+	}
+});
+
+
+/* Меню бургер */
+
+const menuBurger = document.querySelector('.menu-burger');
+const menuNavigation = document.querySelector('.header__menu');
+if (menuBurger) {
+	menuBurger.addEventListener('click', () => {
+		menuBurger.classList.toggle('active');
+		menuNavigation.classList.toggle('active');
+		if (menuBurger.classList.contains('active')) {
+			document.body.style.overflow = 'hidden';
+		} else {
+			document.body.style.overflow = 'auto';
+		}
+	});
+}
+
+const menuElements = document.querySelectorAll('.menu__link');
+if (menuElements.length > 0) {
+	menuElements.forEach(element => {
+		element.addEventListener('click', (event) => {
+			menuBurger.classList.remove('active');
+			menuNavigation.classList.remove('active');
+			document.body.style.overflow = 'auto';
+		});
+	})
+}

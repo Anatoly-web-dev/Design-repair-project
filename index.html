@@ -23,7 +23,7 @@
 <body>
 	<div class="wrapper">
 
-		<header class="header">
+		<header class="header lock-padding">
 			<div class="header__content menu-container">
 				<div class="header__logo logo">
 					<a href="./index.html" class="logo__link">IC "Repair Design Project"</a>
@@ -34,25 +34,28 @@
 							<a class="menu__link" href="#home">home</a>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#home">projects</a>
+							<a class="menu__link" href="#projects">projects</a>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#home">measurement</a>
+							<a class="menu__link" href="#measurement">measurement</a>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#home">team</a>
+							<a class="menu__link" href="#team">team</a>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#home">reviews</a>
+							<a class="menu__link" href="#reviews">reviews</a>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#home">contacts</a>
+							<a class="menu__link" href="#contacts">contacts</a>
 						</li>
 					</ul>
 				</nav>
 				<div class="header__contact-us contact-us">
 					<a class="contact-us__link" href="tel:+79287683239">+7 (928) 768-32-39</a>
-					<a class='contact-us__button btn' href="#callback-form">Request a call</a>
+					<a class='contact-us__button btn pop-up-btn' href="#callback-form">Request a call</a>
+				</div>
+				<div class="menu-burger">
+					<span class="menu-burger__icon"></span>
 				</div>
 			</div>
 		</header>
@@ -63,7 +66,7 @@
 			<article class="home" id="home">
 				<div class="container">
 					<div class="home__container">
-						<h1 class="home__title title">Turnkey Repair in the <br> city of <span>Rostov-on-Don</span></h1>
+						<h1 class="home__title title">Turnkey Repair in the city of <span>Rostov-on-Don</span></h1>
 						<div class="home__text">
 							<p>Get ready-made turnkey repairs on time <br> with work time saving up to 45 days and 20% from
 								cost of materials due to the organization of work</p>
@@ -394,6 +397,7 @@
 					</div>
 				</section>
 			</article>
+
 			<article class="team" id="team">
 				<div class="team__content">
 					<div class="container">
@@ -698,9 +702,8 @@
 							</div>
 							<div class="feedback__text">
 								<p>I want to thank the guys for their work. We put your shower part in repair. I am very
-									grateful
-									that I referred to the repair as to my own. Great thanks I express the project to Georgia for
-									its professionalism and approach.
+									grateful that I referred to the repair as to my own. Great thanks I express the project to
+									Georgia for its professionalism and approach.
 								</p>
 								<p>The repair process was turned out in terms, faster than anticipated. Team mobile and
 									professional. Works performed qualitatively without comments. Quality satisfied. Prices
@@ -727,9 +730,8 @@
 							</div>
 							<div class="feedback__text">
 								<p>I want to thank the guys for their work. We put your shower part in repair. I am very
-									grateful
-									that I referred to the repair as to my own. Great thanks I express the project to Georgia for
-									its professionalism and approach.
+									grateful that I referred to the repair as to my own. Great thanks I express the project to
+									Georgia for its professionalism and approach.
 								</p>
 								<p>The repair process was turned out in terms, faster than anticipated. Team mobile and
 									professional. Works performed qualitatively without comments. Quality satisfied. Prices
@@ -756,9 +758,8 @@
 							</div>
 							<div class="feedback__text">
 								<p>I want to thank the guys for their work. We put your shower part in repair. I am very
-									grateful
-									that I referred to the repair as to my own. Great thanks I express the project to Georgia for
-									its professionalism and approach.
+									grateful that I referred to the repair as to my own. Great thanks I express the project to
+									Georgia for its professionalism and approach.
 								</p>
 								<p>The repair process was turned out in terms, faster than anticipated. Team mobile and
 									professional. Works performed qualitatively without comments. Quality satisfied. Prices
@@ -848,41 +849,62 @@
 							<a class="menu__link" href="#home">home</a>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#home">projects</a>
+							<a class="menu__link" href="#projects">projects</a>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#home">measurement</a>
+							<a class="menu__link" href="#measurement">measurement</a>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#home">team</a>
+							<a class="menu__link" href="#team">team</a>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#home">reviews</a>
+							<a class="menu__link" href="#reviews">reviews</a>
 						</li>
 						<li class="menu__item">
-							<a class="menu__link" href="#home">contacts</a>
+							<a class="menu__link" href="#contacts">contacts</a>
 						</li>
 					</ul>
 				</nav>
 				<div class="footer__contact-us contact-us">
 					<a class="contact-us__link" href="tel:+79287683239">+7 (928) 768-32-39</a>
-					<a class='contact-us__button btn' href="#callback-form"><span>Request a call</span></a>
+					<a class='contact-us__button btn pop-up-btn' href="#callback-form"><span>Request a call</span></a>
 				</div>
 			</div>
 		</footer>
 
 
-		<div class="callback-form" id="callback-form">
-
+		<div class="callback popup" id="callback-form">
+			<div class="callback__content">
+				<form class="callback__form form" action="#" method="post" name="contacts-form">
+					<div class="close">
+						<img src="./img/close.png" alt="X">
+					</div>
+					<fieldset class="form-wrapper">
+						<h3 class="form__title subtitle">have any questions?</h3>
+						<div class="form__body">
+							<div class="form__block">
+								<label for="userFullname">Name</label>
+								<input type="text" id="userFullname" name="userFullname" placeholder="What is your name:">
+							</div>
+							<div class="form__block">
+								<label for="userContactPhone">Phone</label>
+								<input type="text" id="userContactPhone" name="userContactPhone"
+									placeholder="Your phone number:">
+							</div>
+						</div>
+						<div class="form__checkbox">
+							<label for="confirm-4">
+								<input type="checkbox" name="confirm-4" id="confirm-4">
+								<span class="fake"></span>
+								<span class="confirm__text">I agree to the processing of personal data</span>
+							</label>
+						</div>
+						<button class="form__btn btn" type="submit">submit</button>
+					</fieldset>
+				</form>
+			</div>
 		</div>
 
-		<div class="application-form" id="application-form">
-			<form action="#" method="post">
-				<fieldset class="form__border">
-					<legend class="form"></legend>
-				</fieldset>
-			</form>
-		</div>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 	<script src="./js/script.js"></script>
