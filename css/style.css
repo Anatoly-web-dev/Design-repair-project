@@ -217,7 +217,7 @@
 .projects-card__content {
 	display: grid;
 	column-gap: 50px;
-	grid-template-columns: minmax(auto, 440px) minmax(auto, 680px);
+	grid-template-columns: minmax(auto, 442px) minmax(auto, 680px);
 }
 
 .projects-card__title {

@@ -30,8 +30,8 @@
 	}
 
 	.projects-card__text {
-		font-size: calc(11px + 3 * (110vw / 1440));
-		line-height: calc(17px + 10 * (110vw / 1440));
+		font-size: calc(11px + 3 * (100vw / 1440));
+		line-height: calc(17px + 10 * (100vw / 1440));
 	}
 
 	.description p {
@@ -474,8 +474,8 @@
 
 	.projects-card__text {
 		margin: 0 0 72px;
-		font-size: calc(11px + (3 + 3 * 0.6) * (110vw - 375px) / 1440);
-		line-height: calc(17px + (10 + 10 * 0.6) * (110vw - 375px) / 1440);
+		font-size: calc(11px + (3 + 3 * 0.6) * (100vw - 375px) / 1440);
+		line-height: calc(17px + (10 + 10 * 0.6) * (100vw - 375px) / 1440);
 		text-align: center;
 	}
 
