@@ -1,6 +1,6 @@
 // ======================== Слайдер Swiper ===========================
 // Инициализация Swiper
-const imageSlider = new Swiper('.projects-cards__content', {
+const imageSlider = new Swiper('.projects-cards__slider', {
 	// Количество слайдов для показа
 	slidesPerView: 1, // 'auto' // // - нужно также в сss задать автоматическую ширину,
 	// Стрелки
@@ -69,6 +69,11 @@ title_3.textContent = 'Rostov-on-Don Patriotic';
 
 const teamImagesSlider = new Swiper('.team-slider', {
 	slidesPerView: 1,
+	// Стрелки
+	navigation: {
+		nextEl: '.team-slider-btn-next',
+		prevEl: '.team-slider-btn-prev',
+	},
 	pagination: {
 		el: '.team__list',
 		// Буллеты
@@ -88,7 +93,7 @@ const teamImagesSlider = new Swiper('.team-slider', {
 	// Автопрокрутка
 	autoplay: {
 		// пауза между прокруткой
-		delay: 1000,
+		delay: 3000,
 		// закончить на последнем слайде
 		stopOnLastSlide: false,
 		// Отключить после ручного переключения
@@ -121,6 +126,11 @@ const teamProgressSlider = new Swiper('.progress-slider', {
 
 teamProgressSlider.controller.control = teamImagesSlider;
 teamImagesSlider.controller.control = teamProgressSlider;
+
+if (document.body.clientWidth < 768) {
+	document.querySelector('.projects-card-btn-prev').innerHTML = '<img src="./img/arrow-left-slider.svg" alt="left">';
+	document.querySelector('.projects-card-btn-next').innerHTML = '<img src="./img/arrow-right-slider.svg" alt="right">';
+}
 
 const menuSlider = document.querySelector('.team__list');
 

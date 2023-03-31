@@ -15,8 +15,11 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap"
 		rel="stylesheet">
-	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="./favicon.ico">
+	<link rel="stylesheet" href="./css/nullstyle.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/swiper.css">
+	<link rel="stylesheet" href="./css/adaptive.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
 
@@ -27,6 +30,9 @@
 			<div class="header__content menu-container">
 				<div class="header__logo logo">
 					<a href="./index.html" class="logo__link">IC "Repair Design Project"</a>
+				</div>
+				<div class="menu-burger">
+					<span class="menu-burger__icon"></span>
 				</div>
 				<nav class="header__menu menu">
 					<ul class="menu__links">
@@ -54,9 +60,6 @@
 					<a class="contact-us__link" href="tel:+79287683239">+7 (928) 768-32-39</a>
 					<a class='contact-us__button btn pop-up-btn' href="#callback-form">Request a call</a>
 				</div>
-				<div class="menu-burger">
-					<span class="menu-burger__icon"></span>
-				</div>
 			</div>
 		</header>
 
@@ -68,8 +71,8 @@
 					<div class="home__container">
 						<h1 class="home__title title">Turnkey Repair in the city of <span>Rostov-on-Don</span></h1>
 						<div class="home__text">
-							<p>Get ready-made turnkey repairs on time <br> with work time saving up to 45 days and 20% from
-								cost of materials due to the organization of work</p>
+							<p>Get ready-made turnkey repairs on time <br> with work time saving up to 45 days and 20%
+								from cost of materials due to the organization of work</p>
 						</div>
 						<div class="home__buttons">
 							<button class="home__btn btn">calculate the cost</button>
@@ -89,114 +92,96 @@
 								<div class="projects-cards__item swiper-slide"></div>
 							</div>
 							<ul class="projects-cards__titles projects-cards__menu-pagination">
-								<li class="projects-cards__title">
+								<li class="projects-cards__title alt-font-family">
 									<a class="projects-cards__link" href="#">Rostov-on-Don, Admiral</a>
 								</li>
-								<li class="projects-cards__title">
+								<li class="projects-cards__title alt-font-family">
 									<a class="projects-cards__link" href="#">Sochi Thieves</a>
 								</li>
-								<li class="projects-cards__title">
+								<li class="projects-cards__title alt-font-family">
 									<a class="projects-cards__link" href="#">Rostov-on-Don Patriotic</a>
 								</li>
 							</ul>
 						</div>
-						<div class="projects-cards__content swiper-container">
+						<div class="projects-cards__body">
+							<h2 class="projects-card__title title">Completed <br> projects</h2>
+							<div class="projects-card__text">
+								<p>Only a small part of the work performed by our company is presented on the site.
+									For 14 years on in the construction <br> market we have made happy more than 1000
+									families
+								</p>
+							</div>
+						</div>
+						<div class="projects-cards__slider swiper-container">
 							<div class="swiper-wrapper">
 								<div class="projects-card swiper-slide">
 									<div class="projects-card__content">
-										<div class="projects-card__body">
-											<h2 class="projects-card__title title">Completed <br> projects</h2>
-											<div class="projects-card__text">
-												<p>Only a small part of the work performed by our company is presented on the site.
-													For 14 years on in the construction <br> market we have made happy more than 1000
-													families
-												</p>
+										<div class="description-container">
+											<div class="projects-card__description description">
+												<h3 class="description__subtitle subtitle_small">City:</h3>
+												<p>Rostov-on-Don <br> LCD admiral</p>
 											</div>
-											<div class="description-container">
-												<div class="projects-card__description description">
-													<h3 class="description__subtitle subtitle_small">City:</h3>
-													<p>Rostov-on-Don <br> LCD admiral</p>
-												</div>
-												<div class="projects-card__description description">
-													<h3 class="description__subtitle subtitle_small">apartment area:</h3>
-													<p>81 m2</p>
-												</div>
-												<div class="projects-card__description description">
-													<h3 class="description__subtitle subtitle_small">Repair time:</h3>
-													<p>3.5 months</p>
-												</div>
-												<div class="projects-card__description description">
-													<h3 class="description__subtitle subtitle_small">Repair Cost:</h3>
-													<p>Upon request</p>
-												</div>
+											<div class="projects-card__description description">
+												<h3 class="description__subtitle subtitle_small">apartment area:</h3>
+												<p>81 m2</p>
+											</div>
+											<div class="projects-card__description description">
+												<h3 class="description__subtitle subtitle_small">Repair time:</h3>
+												<p>3.5 months</p>
+											</div>
+											<div class="projects-card__description description">
+												<h3 class="description__subtitle subtitle_small">Repair Cost:</h3>
+												<p>Upon request</p>
 											</div>
 										</div>
 										<div class="projects-card__image">
-											<img class="img-adaptive" src="./img/photo-1.png" alt="photo_1">
+											<img class="img-adaptive" src="./img/photo-1.webp" alt="photo_1">
 										</div>
 									</div>
 								</div>
 								<div class="projects-card swiper-slide">
 									<div class="projects-card__content">
-										<div class="projects-card__body">
-											<h2 class="projects-card__title title"><span>Completed <br> projects</span></h2>
-											<div class="projects-card__text">
-												<p>Only a small part of the work performed by our company is presented on the site.
-													For 14 years on in the construction <br> market we have made happy more than 1000
-													families
-												</p>
+										<div class="description-container">
+											<div class="projects-card__description description">
+												<h3 class="description__subtitle subtitle_small">City:</h3>
+												<p>Sochi <br> LCD thieves</p>
 											</div>
-											<div class="description-container">
-												<div class="projects-card__description description">
-													<h3 class="description__subtitle subtitle_small">City:</h3>
-													<p>Sochi <br> LCD thieves</p>
-												</div>
-												<div class="projects-card__description description">
-													<h3 class="description__subtitle subtitle_small">apartment area:</h3>
-													<p>81 m2</p>
-												</div>
-												<div class="projects-card__description description">
-													<h3 class="description__subtitle subtitle_small">Repair time:</h3>
-													<p>3.5 months</p>
-												</div>
-												<div class="projects-card__description description">
-													<h3 class="description__subtitle subtitle_small">Repair Cost:</h3>
-													<p>Upon request</p>
-												</div>
+											<div class="projects-card__description description">
+												<h3 class="description__subtitle subtitle_small">apartment area:</h3>
+												<p>81 m2</p>
+											</div>
+											<div class="projects-card__description description">
+												<h3 class="description__subtitle subtitle_small">Repair time:</h3>
+												<p>3.5 months</p>
+											</div>
+											<div class="projects-card__description description">
+												<h3 class="description__subtitle subtitle_small">Repair Cost:</h3>
+												<p>Upon request</p>
 											</div>
 										</div>
 										<div class="projects-card__image">
-											<img class="img-adaptive" src="./img/photo-2.png" alt="photo_2">
+											<img class="img-adaptive" src="./img/photo-2.webp" alt="photo_2">
 										</div>
 									</div>
 								</div>
 								<div class="projects-card swiper-slide">
 									<div class="projects-card__content">
-										<div class="projects-card__body">
-											<h2 class="projects-card__title title">Completed <br> projects</h2>
-											<div class="projects-card__text">
-												<p>Only a small part of the work performed by our company is presented on the site.
-													For 14 years on in the construction <br> market we have made happy more than 1000
-													families
-												</p>
+										<div class="description-container">
+											<div class="projects-card__description description">
+												<h3 class="description__subtitle subtitle_small">City:</h3>
+												<p>Rostov-on-Don <br> LCD patriotic</p>
 											</div>
-											<div class="description-container">
-												<div class="projects-card__description description">
-													<h3 class="description__subtitle subtitle_small">City:</h3>
-													<p>Rostov-on-Don <br> LCD patriotic</p>
-												</div>
-												<div class="projects-card__description description">
-													<h3 class="description__subtitle subtitle_small">apartment area:</h3>
-													<p>81 m2</p>
-												</div>
-												<div class="projects-card__description description">
-													<h3 class="description__subtitle subtitle_small">Repair time:</h3>
-													<p>3.5 months</p>
-												</div>
-												<div class="projects-card__description description">
-													<h3 class="description__subtitle subtitle_small">Repair Cost:</h3>
-													<p>Upon request</p>
-												</div>
+											<div class="projects-card__description description">
+												<h3 class="description__subtitle subtitle_small">apartment area:</h3>
+												<p>81 m2</p>
+											</div>
+											<div class="projects-card__description description">
+												<h3 class="description__subtitle subtitle_small">Repair time:</h3>
+												<p>3.5 months</p>
+											</div>
+											<div class="projects-card__description description">
+												<h3 class="description__subtitle subtitle_small">Repair Cost:</h3>
+												<p>Upon request</p>
 											</div>
 										</div>
 										<div class="projects-card__image">
@@ -230,7 +215,8 @@
 						<img src="./img/camera.svg" alt="camera">
 					</div>
 					<div class="projects-control__images">
-						<span class="img-adaptive"><img src="./img/poster.png" alt="poster"></span>
+						<span class="projects-control__image">
+							<img class="img-adaptive" src="./img/poster.webp" alt="poster"></span>
 						<span class="projects-control__btn">
 							<span class="projects-control__pseudo"><img src="./img/Polygon.svg" alt="polygon"></span>
 						</span>
@@ -266,76 +252,76 @@
 			</article>
 
 			<article class="measurement" id="measurement">
-				<h2 class="measurement__title subtitle">types of repair</h2>
-				<div class="subtitle__image">
-					<img src="./img/types-of-repair.svg" alt="tools">
-				</div>
-				<section class="repair-types">
-					<div class="container cards">
-						<div class="card">
-							<div class="card__image">
-								<img class="img-adaptive" src="./img/card-image-1.jpg" alt="card-image">
-							</div>
-							<div class="card__body">
-								<h3 class="card__title subtitle_small">Redecorating</h3>
-								<ul class="card__list card-list">
-									<li class="card-list__item">Dismantling of old coatings</li>
-									<li class="card-list__item">Wallpapering</li>
-									<li class="card-list__item">Painting walls and ceilings</li>
-									<li class="card-list__item">Laying flooring</li>
-									<li class="card-list__item">Replacing plumbing</li>
-									<li class="card-list__item">Replacing sockets and switches</li>
-									<li class="card-list__item">Replacing doors</li>
-								</ul>
+				<div class="container">
+					<h2 class="measurement__title subtitle">types of repair</h2>
+					<div class="subtitle__image">
+						<img src="./img/types-of-repair.svg" alt="tools">
+					</div>
+					<section class="repair-types">
+						<div class="container cards">
+							<div class="card">
+								<div class="card__image">
+									<img class="img-adaptive" src="./img/card-image-1.webp" alt="card-image">
+								</div>
+								<div class="card__body">
+									<h3 class="card__title subtitle_small">Redecorating</h3>
+									<ul class="card__list card-list">
+										<li class="card-list__item">Dismantling of old coatings</li>
+										<li class="card-list__item">Wallpapering</li>
+										<li class="card-list__item">Painting walls and ceilings</li>
+										<li class="card-list__item">Laying flooring</li>
+										<li class="card-list__item">Replacing plumbing</li>
+										<li class="card-list__item">Replacing sockets and switches</li>
+										<li class="card-list__item">Replacing doors</li>
+									</ul>
+								</div>
 								<div class="card__text alt-font-family">
 									<p>from 900 rub / m2</p>
 								</div>
 							</div>
-						</div>
-						<div class="card">
-							<div class="card__image">
-								<img class="img-adaptive" src="./img/card-image-2.jpg" alt="card-image">
-							</div>
-							<div class="card__body">
-								<h3 class="card__title subtitle_small">Overhaul</h3>
-								<ul class="card__list card-list">
-									<li class="card-list__item">Dismantling of old coatings</li>
-									<li class="card-list__item">Wallpapering</li>
-									<li class="card-list__item">Painting walls and ceilings</li>
-									<li class="card-list__item">Laying flooring</li>
-									<li class="card-list__item">Replacing plumbing</li>
-									<li class="card-list__item">Replacing sockets and switches</li>
-									<li class="card-list__item">Replacing doors</li>
-								</ul>
+							<div class="card">
+								<div class="card__image">
+									<img class="img-adaptive" src="./img/card-image-2.webp" alt="card-image">
+								</div>
+								<div class="card__body">
+									<h3 class="card__title subtitle_small">Overhaul</h3>
+									<ul class="card__list card-list">
+										<li class="card-list__item">Dismantling of old coatings</li>
+										<li class="card-list__item">Wallpapering</li>
+										<li class="card-list__item">Painting walls and ceilings</li>
+										<li class="card-list__item">Laying flooring</li>
+										<li class="card-list__item">Replacing plumbing</li>
+										<li class="card-list__item">Replacing sockets and switches</li>
+										<li class="card-list__item">Replacing doors</li>
+									</ul>
+								</div>
 								<div class="card__text">
 									<p>from 1800 rub / m2</p>
 								</div>
 							</div>
-						</div>
-						<div class="card">
-							<div class="card__image">
-								<img class="img-adaptive" src="./img/card-image-3.jpg" alt="card-image">
-							</div>
-							<div class="card__body">
-								<h3 class="card__title subtitle_small">Designer Repair</h3>
-								<ul class="card__list card-list">
-									<li class="card-list__item">Dismantling of old coatings</li>
-									<li class="card-list__item">Wallpapering</li>
-									<li class="card-list__item">Painting walls and ceilings</li>
-									<li class="card-list__item">Laying flooring</li>
-									<li class="card-list__item">Replacing plumbing</li>
-									<li class="card-list__item">Replacing sockets and switches</li>
-									<li class="card-list__item">Replacing doors</li>
-								</ul>
+							<div class="card">
+								<div class="card__image">
+									<img class="img-adaptive" src="./img/card-image-3.webp" alt="card-image">
+								</div>
+								<div class="card__body">
+									<h3 class="card__title subtitle_small">Designer Repair</h3>
+									<ul class="card__list card-list">
+										<li class="card-list__item">Dismantling of old coatings</li>
+										<li class="card-list__item">Wallpapering</li>
+										<li class="card-list__item">Painting walls and ceilings</li>
+										<li class="card-list__item">Laying flooring</li>
+										<li class="card-list__item">Replacing plumbing</li>
+										<li class="card-list__item">Replacing sockets and switches</li>
+										<li class="card-list__item">Replacing doors</li>
+									</ul>
+								</div>
 								<div class="card__text">
 									<p>from 4000 rub / m2</p>
 								</div>
 							</div>
 						</div>
-					</div>
-				</section>
-				<section class="measurement-request">
-					<div class="container">
+					</section>
+					<section class="measurement-request">
 						<div class="measurement-request__content">
 							<ul class="measurement-request__list measurement-list">
 								<li class="measurement-list__item">
@@ -394,15 +380,15 @@
 								<p>Help save 10 - 20% of the <br> cost of materials</p>
 							</div>
 						</div>
-					</div>
-				</section>
+					</section>
+				</div>
 			</article>
 
-			<article class="team" id="team">
+			<article class="team">
 				<div class="team__content">
 					<div class="container">
 						<div class="team-menu">
-							<h2 class="team__title title">We realize your <br> wildest fantasies</h2>
+							<h2 class="team__title title" id="team">We realize your <br> wildest fantasies</h2>
 							<ul class="team__list services">
 								<li class="services__item active">
 									<a class="services__link" href="#">American classic</a>
@@ -461,18 +447,18 @@
 									<div class="team-slider__images">
 										<div class="team-slider__column_1">
 											<div class="team-slider__image image-type-1">
-												<img class="img-adaptive" src="./img/image-type-1.jpg" alt="photo1">
+												<img class="img-adaptive" src="./img/image-type-1.webp" alt="photo1">
 											</div>
 											<div class="team-slider__image image-type-3">
-												<img class="img-adaptive" src="./img/image-type-3.jpg" alt="photo2">
+												<img class="img-adaptive" src="./img/image-type-3.webp" alt="photo2">
 											</div>
 										</div>
 										<div class="team-slider__column_2">
 											<div class="team-slider__image image-type-2">
-												<img class="img-adaptive" src="./img/image-type-2.jpg" alt="photo3">
+												<img class="img-adaptive" src="./img/image-type-2.webp" alt="photo3">
 											</div>
 											<div class="team-slider__image image-type-4">
-												<img class="img-adaptive" src="./img/image-type-4.jpg" alt="photo4">
+												<img class="img-adaptive" src="./img/image-type-4.webp" alt="photo4">
 											</div>
 										</div>
 									</div>
@@ -481,18 +467,18 @@
 									<div class="team-slider__images">
 										<div class="team-slider__column_1">
 											<div class="team-slider__image image-type-1">
-												<img class="img-adaptive" src="./img/image-type-2.jpg" alt="photo1">
+												<img class="img-adaptive" src="./img/image-type-2.webp" alt="photo1">
 											</div>
 											<div class="team-slider__image image-type-3">
-												<img class="img-adaptive" src="./img/image-type-4.jpg" alt="photo2">
+												<img class="img-adaptive" src="./img/image-type-4.webp" alt="photo2">
 											</div>
 										</div>
 										<div class="team-slider__column_2">
 											<div class="team-slider__image image-type-2">
-												<img class="img-adaptive" src="./img/image-type-1.jpg" alt="photo3">
+												<img class="img-adaptive" src="./img/image-type-1.webp" alt="photo3">
 											</div>
 											<div class="team-slider__image image-type-4">
-												<img class="img-adaptive" src="./img/image-type-3.jpg" alt="photo4">
+												<img class="img-adaptive" src="./img/image-type-3.webp" alt="photo4">
 											</div>
 										</div>
 									</div>
@@ -501,18 +487,18 @@
 									<div class="team-slider__images">
 										<div class="team-slider__column_1">
 											<div class="team-slider__image image-type-1">
-												<img class="img-adaptive" src="./img/image-type-1.jpg" alt="photo1">
+												<img class="img-adaptive" src="./img/image-type-1.webp" alt="photo1">
 											</div>
 											<div class="team-slider__image image-type-3">
-												<img class="img-adaptive" src="./img/image-type-4.jpg" alt="photo2">
+												<img class="img-adaptive" src="./img/image-type-4.webp" alt="photo2">
 											</div>
 										</div>
 										<div class="team-slider__column_2">
 											<div class="team-slider__image image-type-2">
-												<img class="img-adaptive" src="./img/image-type-2.jpg" alt="photo3">
+												<img class="img-adaptive" src="./img/image-type-2.webp" alt="photo3">
 											</div>
 											<div class="team-slider__image image-type-4">
-												<img class="img-adaptive" src="./img/image-type-3.jpg" alt="photo4">
+												<img class="img-adaptive" src="./img/image-type-3.webp" alt="photo4">
 											</div>
 										</div>
 									</div>
@@ -521,18 +507,18 @@
 									<div class="team-slider__images">
 										<div class="team-slider__column_1">
 											<div class="team-slider__image image-type-1">
-												<img class="img-adaptive" src="./img/image-type-1.jpg" alt="photo1">
+												<img class="img-adaptive" src="./img/image-type-1.webp" alt="photo1">
 											</div>
 											<div class="team-slider__image image-type-3">
-												<img class="img-adaptive" src="./img/image-type-3.jpg" alt="photo2">
+												<img class="img-adaptive" src="./img/image-type-3.webp" alt="photo2">
 											</div>
 										</div>
 										<div class="team-slider__column_2">
 											<div class="team-slider__image image-type-2">
-												<img class="img-adaptive" src="./img/image-type-2.jpg" alt="photo3">
+												<img class="img-adaptive" src="./img/image-type-2.webp" alt="photo3">
 											</div>
 											<div class="team-slider__image image-type-4">
-												<img class="img-adaptive" src="./img/image-type-4.jpg" alt="photo4">
+												<img class="img-adaptive" src="./img/image-type-4.webp" alt="photo4">
 											</div>
 										</div>
 									</div>
@@ -541,18 +527,18 @@
 									<div class="team-slider__images">
 										<div class="team-slider__column_1">
 											<div class="team-slider__image image-type-1">
-												<img class="img-adaptive" src="./img/image-type-1.jpg" alt="photo1">
+												<img class="img-adaptive" src="./img/image-type-1.webp" alt="photo1">
 											</div>
 											<div class="team-slider__image image-type-3">
-												<img class="img-adaptive" src="./img/image-type-4.jpg" alt="photo2">
+												<img class="img-adaptive" src="./img/image-type-4.webp" alt="photo2">
 											</div>
 										</div>
 										<div class="team-slider__column_2">
 											<div class="team-slider__image image-type-2">
-												<img class="img-adaptive" src="./img/image-type-3.jpg" alt="photo3">
+												<img class="img-adaptive" src="./img/image-type-3.webp" alt="photo3">
 											</div>
 											<div class="team-slider__image image-type-4">
-												<img class="img-adaptive" src="./img/image-type-2.jpg" alt="photo4">
+												<img class="img-adaptive" src="./img/image-type-2.webp" alt="photo4">
 											</div>
 										</div>
 									</div>
@@ -561,18 +547,18 @@
 									<div class="team-slider__images">
 										<div class="team-slider__column_1">
 											<div class="team-slider__image image-type-1">
-												<img class="img-adaptive" src="./img/image-type-4.jpg" alt="photo1">
+												<img class="img-adaptive" src="./img/image-type-4.webp" alt="photo1">
 											</div>
 											<div class="team-slider__image image-type-3">
-												<img class="img-adaptive" src="./img/image-type-3.jpg" alt="photo2">
+												<img class="img-adaptive" src="./img/image-type-3.webp" alt="photo2">
 											</div>
 										</div>
 										<div class="team-slider__column_2">
 											<div class="team-slider__image image-type-2">
-												<img class="img-adaptive" src="./img/image-type-2.jpg" alt="photo3">
+												<img class="img-adaptive" src="./img/image-type-2.webp" alt="photo3">
 											</div>
 											<div class="team-slider__image image-type-4">
-												<img class="img-adaptive" src="./img/image-type-1.jpg" alt="photo4">
+												<img class="img-adaptive" src="./img/image-type-1.webp" alt="photo4">
 											</div>
 										</div>
 									</div>
@@ -581,18 +567,18 @@
 									<div class="team-slider__images">
 										<div class="team-slider__column_1">
 											<div class="team-slider__image image-type-1">
-												<img class="img-adaptive" src="./img/image-type-1.jpg" alt="photo1">
+												<img class="img-adaptive" src="./img/image-type-1.webp" alt="photo1">
 											</div>
 											<div class="team-slider__image image-type-3">
-												<img class="img-adaptive" src="./img/image-type-3.jpg" alt="photo2">
+												<img class="img-adaptive" src="./img/image-type-3.webp" alt="photo2">
 											</div>
 										</div>
 										<div class="team-slider__column_2">
 											<div class="team-slider__image image-type-2">
-												<img class="img-adaptive" src="./img/image-type-2.jpg" alt="photo3">
+												<img class="img-adaptive" src="./img/image-type-2.webp" alt="photo3">
 											</div>
 											<div class="team-slider__image image-type-4">
-												<img class="img-adaptive" src="./img/image-type-4.jpg" alt="photo4">
+												<img class="img-adaptive" src="./img/image-type-4.webp" alt="photo4">
 											</div>
 										</div>
 									</div>
@@ -601,18 +587,18 @@
 									<div class="team-slider__images">
 										<div class="team-slider__column_1">
 											<div class="team-slider__image image-type-1">
-												<img class="img-adaptive" src="./img/image-type-3.jpg" alt="photo1">
+												<img class="img-adaptive" src="./img/image-type-3.webp" alt="photo1">
 											</div>
 											<div class="team-slider__image image-type-3">
-												<img class="img-adaptive" src="./img/image-type-4.jpg" alt="photo2">
+												<img class="img-adaptive" src="./img/image-type-4.webp" alt="photo2">
 											</div>
 										</div>
 										<div class="team-slider__column_2">
 											<div class="team-slider__image image-type-2">
-												<img class="img-adaptive" src="./img/image-type-1.jpg" alt="photo3">
+												<img class="img-adaptive" src="./img/image-type-1.webp" alt="photo3">
 											</div>
 											<div class="team-slider__image image-type-4">
-												<img class="img-adaptive" src="./img/image-type-2.jpg" alt="photo4">
+												<img class="img-adaptive" src="./img/image-type-2.webp" alt="photo4">
 											</div>
 										</div>
 									</div>
@@ -621,18 +607,18 @@
 									<div class="team-slider__images">
 										<div class="team-slider__column_1">
 											<div class="team-slider__image image-type-1">
-												<img class="img-adaptive" src="./img/image-type-2.jpg" alt="photo1">
+												<img class="img-adaptive" src="./img/image-type-2.webp" alt="photo1">
 											</div>
 											<div class="team-slider__image image-type-3">
-												<img class="img-adaptive" src="./img/image-type-3.jpg" alt="photo2">
+												<img class="img-adaptive" src="./img/image-type-3.webp" alt="photo2">
 											</div>
 										</div>
 										<div class="team-slider__column_2">
 											<div class="team-slider__image image-type-2">
-												<img class="img-adaptive" src="./img/image-type-1.jpg" alt="photo3">
+												<img class="img-adaptive" src="./img/image-type-1.webp" alt="photo3">
 											</div>
 											<div class="team-slider__image image-type-4">
-												<img class="img-adaptive" src="./img/image-type-4.jpg" alt="photo4">
+												<img class="img-adaptive" src="./img/image-type-4.webp" alt="photo4">
 											</div>
 										</div>
 									</div>
@@ -641,18 +627,18 @@
 									<div class="team-slider__images">
 										<div class="team-slider__column_1">
 											<div class="team-slider__image image-type-1">
-												<img class="img-adaptive" src="./img/image-type-4.jpg" alt="photo1">
+												<img class="img-adaptive" src="./img/image-type-4.webp" alt="photo1">
 											</div>
 											<div class="team-slider__image image-type-3">
-												<img class="img-adaptive" src="./img/image-type-3.jpg" alt="photo2">
+												<img class="img-adaptive" src="./img/image-type-3.webp" alt="photo2">
 											</div>
 										</div>
 										<div class="team-slider__column_2">
 											<div class="team-slider__image image-type-2">
-												<img class="img-adaptive" src="./img/image-type-1.jpg" alt="photo3">
+												<img class="img-adaptive" src="./img/image-type-1.webp" alt="photo3">
 											</div>
 											<div class="team-slider__image image-type-4">
-												<img class="img-adaptive" src="./img/image-type-2.jpg" alt="photo4">
+												<img class="img-adaptive" src="./img/image-type-2.webp" alt="photo4">
 											</div>
 										</div>
 									</div>
@@ -661,21 +647,29 @@
 									<div class="team-slider__images">
 										<div class="team-slider__column_1">
 											<div class="team-slider__image image-type-1">
-												<img class="img-adaptive" src="./img/image-type-4.jpg" alt="photo1">
+												<img class="img-adaptive" src="./img/image-type-4.webp" alt="photo1">
 											</div>
 											<div class="team-slider__image image-type-3">
-												<img class="img-adaptive" src="./img/image-type-2.jpg" alt="photo2">
+												<img class="img-adaptive" src="./img/image-type-2.webp" alt="photo2">
 											</div>
 										</div>
 										<div class="team-slider__column_2">
 											<div class="team-slider__image image-type-2">
-												<img class="img-adaptive" src="./img/image-type-1.jpg" alt="photo3">
+												<img class="img-adaptive" src="./img/image-type-1.webp" alt="photo3">
 											</div>
 											<div class="team-slider__image image-type-4">
-												<img class="img-adaptive" src="./img/image-type-3.jpg" alt="photo4">
+												<img class="img-adaptive" src="./img/image-type-3.webp" alt="photo4">
 											</div>
 										</div>
 									</div>
+								</div>
+							</div>
+							<div class="team-slider__btns">
+								<div class="team-slider-btn-prev">
+									<img src="./img/arrow-left-slider.svg" alt="left">
+								</div>
+								<div class="team-slider-btn-next">
+									<img src="./img/arrow-right-slider.svg" alt="right">
 								</div>
 							</div>
 						</div>
@@ -696,7 +690,7 @@
 						<div class="feedback">
 							<div class="feedback__header">
 								<div class="feedback__photo">
-									<img class="img-adaptive" src="./img/user-photo-1.jpg" alt="photo">
+									<img class="img-adaptive" src="./img/user-photo-1.webp" alt="photo">
 								</div>
 								<h3 class="feedback__title subtitle_small">Fedosova Maria Konstantinovna</h3>
 							</div>
@@ -724,7 +718,7 @@
 						<div class="feedback">
 							<div class="feedback__header">
 								<div class="feedback__photo">
-									<img class="img-adaptive" src="./img/user-photo-2.jpg" alt="photo">
+									<img class="img-adaptive" src="./img/user-photo-2.webp" alt="photo">
 								</div>
 								<h3 class="feedback__title subtitle_small">Afanasyev Sergey Alexandrovich</h3>
 							</div>
@@ -752,7 +746,7 @@
 						<div class="feedback">
 							<div class="feedback__header">
 								<div class="feedback__photo">
-									<img class="img-adaptive" src="./img/user-photo-3.jpg" alt="photo">
+									<img class="img-adaptive" src="./img/user-photo-3.webp" alt="photo">
 								</div>
 								<h3 class="feedback__title subtitle_small">Kiriev Egor <br> Leonidovich</h3>
 							</div>
@@ -782,38 +776,38 @@
 			</article>
 
 			<article class="contacts" id="contacts">
-				<form class="contact__form form" action="#" method="post" name="contacts-form">
-					<fieldset class="form-wrapper">
-						<h3 class="form__title subtitle">have any questions?</h3>
-						<div class="form__body">
-							<div class="form__block">
-								<label for="username">Name</label>
-								<input type="text" id="username" name="username" placeholder="What is your name:">
+				<div class="container">
+					<form class="contact__form form" action="#" method="post" name="contacts-form">
+						<fieldset class="form-wrapper">
+							<h3 class="form__title subtitle">have any questions?</h3>
+							<div class="form__body">
+								<div class="form__block">
+									<label for="username">Name</label>
+									<input type="text" id="username" name="username" placeholder="What is your name:">
+								</div>
+								<div class="form__block">
+									<label for="userphone">Phone</label>
+									<input type="text" id="userphone" name="userphone" placeholder="Your phone number:">
+								</div>
+								<div class="form__block">
+									<label for="user-question">Question</label>
+									<input type="text" id="user-question" name="user-question" placeholder="I want to know:">
+								</div>
 							</div>
-							<div class="form__block">
-								<label for="userphone">Phone</label>
-								<input type="text" id="userphone" name="userphone" placeholder="Your phone number:">
+							<div class="form__checkbox">
+								<label for="confirm-3">
+									<input type="checkbox" name="confirm-3" id="confirm-3">
+									<span class="fake"></span>
+									<span class="confirm__text">I agree to the processing of personal data</span>
+								</label>
 							</div>
-							<div class="form__block">
-								<label for="user-question">Question</label>
-								<input type="text" id="user-question" name="user-question" placeholder="I want to know:">
-							</div>
-						</div>
-						<div class="form__checkbox">
-							<label for="confirm-3">
-								<input type="checkbox" name="confirm-3" id="confirm-3">
-								<span class="fake"></span>
-								<span class="confirm__text">I agree to the processing of personal data</span>
-							</label>
-						</div>
-						<button class="form__btn btn" type="submit">submit</button>
-					</fieldset>
-				</form>
-				<div class="contacts__content">
-					<div class="container">
-						<div class="contacts__info">
-							<address> Rostov-on-Don, Nansen St., 239 Shopping Center</address>
-							<p>Decorum Tel <a href="tel:+79287683229">+7 (928) 768 32 29</a></p>
+							<button class="form__btn btn" type="submit">submit</button>
+						</fieldset>
+					</form>
+					<div class="contacts__content">
+						<div class="contacts__info alt-font-family">
+							<address> Rostov-on-Don, Nansen St., 239 Shopping Center Decorum</address>
+							<p>Tel <a href="tel:+79287683229">+7 (928) 768 32 29</a></p>
 						</div>
 						<div class="contacts__social social">
 							<ul class="social__items">
@@ -830,7 +824,7 @@
 							</ul>
 						</div>
 						<div class="contacts__image">
-							<img class="img-adaptive" src="./img/contact-image.jpg" alt="map">
+							<img class="img-adaptive" src="./img/contact-image.webp" alt="map">
 						</div>
 					</div>
 				</div>
